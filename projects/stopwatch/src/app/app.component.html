@@ -1,0 +1,7 @@
+<div class="Stopwatch-container">
+    <p class="time"> {{ lapTime | number : "1.1-1"}} seconds</p>
+    <div class="controls">
+        <button (click)="startStop()">{{ isRunning ? "Stop": "Start"}}</button>
+        <button (click)="reset()" [disabled]="!lapTime">Rest</button>
+    </div>
+</div>
