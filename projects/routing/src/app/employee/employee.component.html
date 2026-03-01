@@ -1,0 +1,14 @@
+<table>
+    <thead>
+        <tr>
+            <th>Department</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let emp of employees; let i = index">
+        <tr>
+            <td>
+                <a href=""[routerLink]="['/employee', emp.empName, emp.empId]">{{emp.empDept}}</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
