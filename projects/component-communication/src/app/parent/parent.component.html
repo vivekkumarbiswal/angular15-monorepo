@@ -1,0 +1,7 @@
+<h2>Parent Componet</h2>
+
+<button (click)="toggle()">Change Name</button>
+<app-child [user]="user"></app-child>
+
+<app-child (notify)="receiveMessage($event)"></app-child>
+<p>{{ message }}</p>
