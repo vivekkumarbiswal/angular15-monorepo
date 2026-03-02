@@ -1,0 +1,8 @@
+<div>
+    <h1>Employee Details</h1>
+    <div *ngIf="(id && name)">
+        <p><strong>Employee Id: </strong>{{id}}</p>
+        <p><strong>Employee Name: </strong>{{name}}</p>
+    </div>
+    <button (click)="backTOEmployee()">Back</button>
+</div>

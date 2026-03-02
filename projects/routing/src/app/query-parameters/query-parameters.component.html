@@ -1,0 +1,8 @@
+<h1>Employees</h1>
+<div>
+    <ul>
+        <li *ngFor="let emp of employees; let i = index">
+            <a href="#" [routerLink]="['/queryParameter']" [queryParams]="{id: emp.id, name: emp.name}">{{emp.name}}</a>
+        </li>
+    </ul>
+</div>

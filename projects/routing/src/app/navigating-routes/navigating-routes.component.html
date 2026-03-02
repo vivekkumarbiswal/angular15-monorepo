@@ -1,0 +1,9 @@
+<h1>Employees</h1>
+<div>
+    <ul>
+        <li *ngFor="let emp of employees; let i = index">
+            {{emp.name}}
+            <button (click)="navigateToDetail(emp.id, emp.name)">View Details</button>
+        </li>
+    </ul>
+</div>

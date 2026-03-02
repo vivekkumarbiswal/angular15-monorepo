@@ -11,6 +11,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ParentComponent } from './parent/parent.component';
 import { FirstChildComponent } from './first-child/first-child.component';
 import { SecondChildComponent } from './second-child/second-child.component';
+import { ActivatedRouteEmployeeComponent } from './activated-route-employee/activated-route-employee.component';
+import { QueryParametersComponent } from './query-parameters/query-parameters.component';
+import { NavigatingRoutesComponent } from './navigating-routes/navigating-routes.component';
+import { NavigatingRoutesDetailComponent } from './navigating-routes-detail/navigating-routes-detail.component';
 
 const routes: Routes = [
   {path:'home', component:HomeComponent},
@@ -27,6 +31,21 @@ const routes: Routes = [
     {path:'secondChild', component:SecondChildComponent}
   ]},
   
+// Activated Route
+  {path:'activateRouteEmployee/:id/:name', component:ActivatedRouteEmployeeComponent},
+
+
+  //Query parameter
+  {path:'', redirectTo:'/queryParameter', pathMatch: 'full'
+  },
+  {path: 'queryParameter', component: QueryParametersComponent},
+
+  //Navigating route
+  {path:'', redirectTo:'navigatingRoute', pathMatch:'full'},
+  {path: 'navigatingRoute', component: NavigatingRoutesComponent},
+  {path: 'navigatingRouteDetail', component: NavigatingRoutesDetailComponent},
+
+
   {path: '**', component:PageNotFoundComponent}
 ];
 
