@@ -1,0 +1,47 @@
+<form #myForm = "ngForm" (ngSubmit)="submitForm(myForm)">
+  <div>
+    <label for="username">Name: </label>
+    <input type="text" name="username" required [(ngModel)]="user.username">
+  </div>
+  <button type="submit">Submit</button>
+</form>
+
+<hr>
+<!-- Login Form -->
+<form #f = 'ngForm' (ngSubmit)="onSubmit(f)">
+  <div>
+    <label>Email</label>
+    <input 
+      name="email" 
+      type="email" 
+      [(ngModel)] ='model.email' 
+      required 
+      #email = "ngModel"
+    >
+    <div *ngIf="email.invalid && (email.touched || f.submitted)">
+      <small *ngIf="email.errors?.['required']">Email is required.</small>
+      <small *ngIf="email.errors?.['email']">Enter a valid email.</small>
+    </div>
+  </div>
+  <div>
+    <label>Password</label>
+    <input 
+      name="password" 
+      type="password"
+      [(ngModel)] = 'model.password'
+      required
+      minlength="6"
+      #password = "ngModel"
+      >
+      <div *ngIf="password.invalid && (password.touched || f.submitted)">
+        <small *ngIf="password.errors?.['required']">Password required.</small>
+        <small *ngIf="password.errors?.['minlength']">Minimum 6 chars.</small>
+      </div>
+  </div>
+  <button type="submit" [disabled]="f.invalid">Login</button>
+</form>
+<app-submit-form></app-submit-form>
+
+<hr>
+
+<app-template-driven-form></app-template-driven-form>
