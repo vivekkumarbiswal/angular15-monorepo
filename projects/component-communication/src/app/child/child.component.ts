@@ -6,12 +6,18 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./child.component.scss']
 })
 export class ChildComponent {
-  @Input() user: any;
+  // Data received from Parent
+  @Input() name: string = ''
+  @Input() age!: number ;
+  @Input() job = ''
 
-  @Output() notify = new EventEmitter<string>();
+  
+  // sending data from child
+  @Output () sendMessage = new EventEmitter<string>();
 
-  sendMessage() {
-    this.notify.emit('Hello Parent!');
+  sendData(){
+    const message = "Hello Parent - message form child"
+    this.sendMessage.emit(message);
   }
 }
 

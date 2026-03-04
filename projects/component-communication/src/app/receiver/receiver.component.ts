@@ -1,10 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { SharedService } from '../shared.service';
 
 @Component({
   selector: 'app-receiver',
   templateUrl: './receiver.component.html',
   styleUrls: ['./receiver.component.scss']
 })
-export class ReceiverComponent {
+export class ReceiverComponent implements OnInit {
+  message: string = '';
+  constructor(private sharedService: SharedService) { }
 
+  ngOnInit() {
+    this.sharedService.message$.subscribe(data => {
+      this.message = data;
+    });
+  }
 }

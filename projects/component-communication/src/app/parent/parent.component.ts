@@ -6,27 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./parent.component.scss']
 })
 export class ParentComponent {
-  user = {
-    name: 'Vivek',
-    role: 'Angular Developer'
-  };
-  flag = true;
+  parentName = 'Vivek Kumar Biswal';
+  parentAge = 29;
+  parentJob = 'Developer';
 
-  toggle() {
-    if (!this.flag) {
-      this.user.name = 'Rahul'
-    } else {
-      this.user.name = 'Vivek'
-    }
-    this.flag = !this.flag;
-  }
-  changeName() {
-    this.user.name = 'Rahul';
+  changeValue(){
+    this.parentName = 'Rahul'
+    this.parentAge = 30;
+    this.parentJob = 'Senior Developer'
   }
 
-  message = '';
-
-  receiveMessage(data: string) {
-    this.message = data;
+  messageFromChild = "";
+  receiveMessage(msg: string){
+    this.messageFromChild = msg;
   }
 }

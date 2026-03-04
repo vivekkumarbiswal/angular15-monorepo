@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SharedService } from '../shared.service';
 
 @Component({
   selector: 'app-sender',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./sender.component.scss']
 })
 export class SenderComponent {
+constructor(private sharedService: SharedService){}
 
+sendData(){
+  this.sharedService.sendMessage("Hello Form Sender Component");
+}
 }

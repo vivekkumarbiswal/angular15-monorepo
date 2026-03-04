@@ -1,7 +1,10 @@
-<h2>Parent Componet</h2>
+<h2>Parent Component</h2>
+<app-child 
+    [name]="parentName"
+    [age]="parentAge"
+    [job]="parentJob"
+    (sendMessage)="receiveMessage($event)"
+    ></app-child>
+<button type="button" (click)="changeValue()">Change Parent Value</button>
 
-<button (click)="toggle()">Change Name</button>
-<app-child [user]="user"></app-child>
-
-<app-child (notify)="receiveMessage($event)"></app-child>
-<p>{{ message }}</p>
+<p><strong>Message Received:</strong>{{messageFromChild}}</p>

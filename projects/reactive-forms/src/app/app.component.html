@@ -1,0 +1,52 @@
+<!-- FormControl -->
+<input type="text" [formControl] = "usernameControl" placeholder="Enter userName">
+<button type="submit" (click)="showValue()">Show</button>
+<br>
+<br>
+<hr>
+<br>
+<!-- FormGroup -->
+ <div>
+  <form [formGroup]="myForm" (ngSubmit)="submitForm()">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" formControlName="name">
+      <br>
+      <label for="name">Email:</label>
+      <input type="text" formControlName="email">
+      <br>
+      <label for="name">Age:</label>
+      <input type="text" formControlName="age">
+    </div>
+    <button type="submit">Sumbit</button>
+  </form>
+ </div>
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<!-- FormArray -->
+ <form [formGroup]="employeeForm" (ngSubmit)="onSubmitForm()">
+  <h2>Employee Form(FormArray)</h2>
+  <div formArrayName="employees">
+    <div *ngFor="let emp of employees.controls; let i = index">
+      <div [formGroupName]="i">
+        <label>Name:</label>
+        <input type="text" formControlName="name" placeholder="Enter name">
+        <label>Job:</label>
+        <input
+          type="text"
+          formControlName="job"
+          placeholder="Enter employee job..."
+        />
+      </div>
+    </div>
+  </div>
+  <button type="button" (click)="addEmployeeFormBuilder()">Add Employee</button>
+  <button [disabled]="employeeForm.invalid">Submit</button>
+ </form>
+ <br>
+ <hr>
+<app-login></app-login>
