@@ -1,0 +1,17 @@
+<form [formGroup]="myForm" (ngSubmit)="formSubmit()">
+  <div>
+    <label>Name</label>
+    <input type="text" formControlName="name" />
+    <div *ngIf="nameControl.touched && nameControl.errors?.['required']">
+      <small style="color: red">*Name required</small>
+    </div>
+  </div>
+  <div>
+    <label>Email address</label>
+    <input type="email" formControlName="email" />
+    <div *ngIf="emailControl.touched && emailControl.errors?.['required']">
+      <small style="color: red">*Email required</small>
+    </div>
+  </div>
+  <button type="submit">Submit</button>
+</form>
