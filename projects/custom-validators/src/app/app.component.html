@@ -1,0 +1,63 @@
+<div class="container">
+  <form [formGroup]="myForm">
+    <div class="mb-3">
+      <label>Name </label>
+      <input
+        type="text"
+        id="inputName"
+        class="form-control"
+        formControlName="name"
+        autocomplete="off"
+        required
+      />
+      <small
+        style="color: red"
+        *ngIf="
+          formGetter.get('name')?.invalid && formGetter.get('name')?.touched
+        "
+        >*Please fill name filed</small
+      >
+      <br />
+      <label>Email </label>
+      <input type="text" formControlName="email" autocomplete="off" required />
+      <small
+        style="color: red"
+        *ngIf="
+          formGetter.get('email')?.invalid && formGetter.get('email')?.touched
+        "
+        >*Please fill email filed</small
+      >
+    </div>
+    <div class="btn-group d-flex">
+      <button class="btn btn-success" type="submit">Submit</button>
+    </div>
+  </form>
+</div>
+<br /><br />
+<hr />
+<br /><br />
+
+<form [formGroup]="validateURL" (ngSubmit)="validate()" class="container">
+  <div class="mb-3">
+    <label class="form-label">Enter URL</label>
+    <input
+      type="text"
+      class="form-control"
+      placeholder="https://urlname.com"
+      formControlName="checkURL"
+    />
+
+    <div
+      class="form-label text-danger mt-1"
+      *ngIf="
+        validateURL.get('checkURL')?.dirty &&
+        validateURL.get('checkURL')?.errors?.['urlValid']
+      "
+    >
+      <sup>*</sup>URL format is not valid (https://website.com)
+    </div>
+    <div class="btn-group d-grid mb-3">
+      <button type="submit" class="btn btn-success">Submit</button>
+    </div>
+  </div>
+</form>
