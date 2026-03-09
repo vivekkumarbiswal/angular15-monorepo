@@ -19,7 +19,6 @@ import { ActivatedRouteEmployeeComponent } from './activated-route-employee/acti
 import { QueryParametersComponent } from './query-parameters/query-parameters.component';
 import { NavigatingRoutesComponent } from './navigating-routes/navigating-routes.component';
 import { NavigatingRoutesDetailComponent } from './navigating-routes-detail/navigating-routes-detail.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,13 +38,8 @@ import { NavigatingRoutesDetailComponent } from './navigating-routes-detail/navi
     NavigatingRoutesComponent,
     NavigatingRoutesDetailComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    RouterLink,
-    RouterModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, RouterLink, RouterModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

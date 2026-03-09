@@ -17,40 +17,43 @@ import { NavigatingRoutesComponent } from './navigating-routes/navigating-routes
 import { NavigatingRoutesDetailComponent } from './navigating-routes-detail/navigating-routes-detail.component';
 
 const routes: Routes = [
-  {path:'home', component:HomeComponent},
-  {path:'about', component:AboutComponent},
-  {path:'work', component:WorkComponent},
-  {path:'services', component:ServicesComponent},
-  {path:'news', component: NewsComponent},
-  {path:'contact', component: ContactComponent},
-  {path:'employee/:empName/:empId', component: EmployeeComponent},
+  { path: 'home', component: HomeComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'work', component: WorkComponent },
+  { path: 'services', component: ServicesComponent },
+  { path: 'news', component: NewsComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'employee/:empName/:empId', component: EmployeeComponent },
 
+  {
+    path: 'parent',
+    component: ParentComponent,
+    children: [
+      { path: 'firstChild', component: FirstChildComponent },
+      { path: 'secondChild', component: SecondChildComponent },
+    ],
+  },
 
-  {path: 'parent', component: ParentComponent, children:[
-    {path:'firstChild', component:FirstChildComponent},
-    {path:'secondChild', component:SecondChildComponent}
-  ]},
-  
-// Activated Route
-  {path:'activateRouteEmployee/:id/:name', component:ActivatedRouteEmployeeComponent},
-
+  // Activated Route
+  {
+    path: 'activateRouteEmployee/:id/:name',
+    component: ActivatedRouteEmployeeComponent,
+  },
 
   //Query parameter
-  {path:'', redirectTo:'/queryParameter', pathMatch: 'full'
-  },
-  {path: 'queryParameter', component: QueryParametersComponent},
+  { path: '', redirectTo: '/queryParameter', pathMatch: 'full' },
+  { path: 'queryParameter', component: QueryParametersComponent },
 
   //Navigating route
-  {path:'', redirectTo:'navigatingRoute', pathMatch:'full'},
-  {path: 'navigatingRoute', component: NavigatingRoutesComponent},
-  {path: 'navigatingRouteDetail', component: NavigatingRoutesDetailComponent},
+  { path: '', redirectTo: 'navigatingRoute', pathMatch: 'full' },
+  { path: 'navigatingRoute', component: NavigatingRoutesComponent },
+  { path: 'navigatingRouteDetail', component: NavigatingRoutesDetailComponent },
 
-
-  {path: '**', component:PageNotFoundComponent}
+  { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
