@@ -1,0 +1,17 @@
+<h2>User List</h2>
+
+<div *ngFor="let user of users">
+  {{ user.name }}
+  <button [routerLink]="['/params/user', user.id]">View Details</button>
+</div>
+<button [routerLink]="['../user', 2]">User 2</button>
+<button [routerLink]="['/params/user', 1]">User 1</button>
+<button (click)="goToUser(2)">OK</button>
+
+<hr />
+
+<h2>Users</h2>
+
+<button (click)="goToPage(1)">Page 1</button>
+<button (click)="goToPage(2)">Page 2</button>
+<button (click)="goToPage(3)">Page 3</button>

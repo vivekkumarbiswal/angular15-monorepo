@@ -1,0 +1,23 @@
+<h2>Angular Routing Lab</h2>
+<button routerLink="/basic/home">Home</button>
+<button routerLink="/basic/about">About</button>
+<hr />
+
+<nav>
+  <a routerLink="/params/users">Route Parameters</a>
+</nav>
+
+<button [routerLink]="['/params/user', 1]">User 1</button>
+<hr />
+<nav>
+  <a routerLink="/params/users">Users</a>
+  <br />
+  <a [routerLink]="['/params/users']" [queryParams]="{ page: 2 }"
+    >Users Page 2</a
+  >
+  <br />
+  <a [routerLink]="['/params/users']" [queryParams]="{ role: 'admin' }"
+    >Admin Users</a
+  >
+  <router-outlet></router-outlet>
+</nav>
