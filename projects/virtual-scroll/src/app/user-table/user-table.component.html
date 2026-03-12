@@ -1,0 +1,22 @@
+<h2>Angular Virtual Scroll</h2>
+<cdk-virtual-scroll-viewport itemSize="80" style="height: 500px">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Comment</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *cdkVirtualFor="let comment of comments$; trackBy: trackById">
+        <td>{{ comment.id }}</td>
+        <td>{{ comment.name }}</td>
+        <td>{{ comment.email }}</td>
+        <td>{{ comment.body }}</td>
+      </tr>
+    </tbody>
+  </table>
+</cdk-virtual-scroll-viewport>
