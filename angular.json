@@ -1868,6 +1868,103 @@
           }
         }
       }
+    },
+    "virtual-scroll-pagination": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "projects/virtual-scroll-pagination",
+      "sourceRoot": "projects/virtual-scroll-pagination/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/virtual-scroll-pagination",
+            "index": "projects/virtual-scroll-pagination/src/index.html",
+            "main": "projects/virtual-scroll-pagination/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/virtual-scroll-pagination/tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "projects/virtual-scroll-pagination/src/favicon.ico",
+              "projects/virtual-scroll-pagination/src/assets"
+            ],
+            "styles": [
+              "projects/virtual-scroll-pagination/src/styles.scss"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "virtual-scroll-pagination:build:production"
+            },
+            "development": {
+              "browserTarget": "virtual-scroll-pagination:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "virtual-scroll-pagination:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/virtual-scroll-pagination/tsconfig.spec.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "projects/virtual-scroll-pagination/src/favicon.ico",
+              "projects/virtual-scroll-pagination/src/assets"
+            ],
+            "styles": [
+              "projects/virtual-scroll-pagination/src/styles.scss"
+            ],
+            "scripts": []
+          }
+        }
+      }
     }
   }
 }

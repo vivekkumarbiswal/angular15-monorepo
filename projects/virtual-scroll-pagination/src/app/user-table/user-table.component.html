@@ -1,0 +1,15 @@
+<cdk-virtual-scroll-viewport
+  itemSize="80"
+  class="viewport"
+  (scrolledIndexChange)="onScroll($event)"
+>
+  <div
+    class="row"
+    *cdkVirtualFor="let comment of comments$ | async; trackBy: trackById"
+  >
+    <span>{{ comment.id }}</span>
+    <span>{{ comment.name }}</span>
+    <span>{{ comment.email }}</span>
+    <span>{{ comment.body }}</span>
+  </div>
+</cdk-virtual-scroll-viewport>

@@ -1,0 +1,12 @@
+.viewport {
+  height: 500px;
+  border: 1px solid #ccc;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 80px 200px 250px 1fr;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  height: 80px;
+}
