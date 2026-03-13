@@ -1,17 +1,23 @@
-<h2>Commetns</h2>
+<h2>Virtual Scroll + Infinite Scroll Comments</h2>
 
-<table border="1">
-  <tr>
-    <th>ID</th>
-    <th>Name</th>
-    <th>Email</th>
-  </tr>
-  <tr *ngFor="let comment of comments$ | async">
-    <td>{{ comment.id }}</td>
-    <td>{{ comment.name }}</td>
-    <td>{{ comment.email }}</td>
-  </tr>
-</table>
-<button (click)="prevPage()">Previous</button>
+<cdk-virtual-scroll-viewport
+  itemSize="60"
+  style="height: 400px"
+  (scrolledIndexChange)="onScroll($event)"
+>
+  <table border="1">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+    <tr *cdkVirtualFor="let comment of comments$ | async; trackBy: trackById">
+      <td>{{ comment.id }}</td>
+      <td>{{ comment.name }}</td>
+      <td>{{ comment.email }}</td>
+    </tr>
+  </table>
+  <!-- <button (click)="prevPage()">Previous</button>
 <span>Page {{ page }}</span>
-<button (click)="nextPage()">Next</button>
+<button (click)="nextPage()">Next</button> -->
+</cdk-virtual-scroll-viewport>
