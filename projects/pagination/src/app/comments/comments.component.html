@@ -1,0 +1,17 @@
+<h2>Commetns</h2>
+
+<table border="1">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Email</th>
+  </tr>
+  <tr *ngFor="let comment of comments$ | async">
+    <td>{{ comment.id }}</td>
+    <td>{{ comment.name }}</td>
+    <td>{{ comment.email }}</td>
+  </tr>
+</table>
+<button (click)="prevPage()">Previous</button>
+<span>Page {{ page }}</span>
+<button (click)="nextPage()">Next</button>
