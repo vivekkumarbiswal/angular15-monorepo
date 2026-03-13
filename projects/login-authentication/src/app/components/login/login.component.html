@@ -1,0 +1,16 @@
+<div>
+  <h2>Login</h2>
+  <input
+    type="email"
+    id="email"
+    placeholder="Type your email here"
+    [(ngModel)]="email"
+  />
+  <input
+    type="password"
+    id="password"
+    placeholder="Type your password here"
+    [(ngModel)]="password"
+  />
+  <button type="submit" (click)="isLogin()">Login</button>
+</div>
