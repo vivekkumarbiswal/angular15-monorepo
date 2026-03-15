@@ -34,5 +34,19 @@
       "email": "alex@gmail.com",
       "age": 28
     }
+  ],
+  "employees": [
+    {
+      "name": "John update",
+      "email": "john@gmail.com",
+      "salary": 50000,
+      "id": 1
+    },
+    {
+      "name": "Vivek",
+      "email": "Vivek@email.com",
+      "salary": 98000,
+      "id": 2
+    }
   ]
 }

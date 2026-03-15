@@ -1,0 +1,28 @@
+<h2>Employee CRUD</h2>
+
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <input type="text" placeholder="Name" formControlName="name" />
+  <input type="email" placeholder="Email" formControlName="email" />
+  <input type="number" placeholder="Salary" formControlName="salary" />
+
+  <button type="sumbit">{{ editId ? "Update" : "Add" }}</button>
+</form>
+
+<hr />
+
+<tr>
+  <th>Name</th>
+  <th>Email</th>
+  <th>Salary</th>
+  <th>Action</th>
+</tr>
+
+<tr *ngFor="let emp of employees">
+  <td>{{ emp.name }}</td>
+  <td>{{ emp.email }}</td>
+  <td>{{ emp.salary }}</td>
+  <td>
+    <button (click)="edit(emp)">Edit</button>
+    <button (click)="delete(emp.id)">Delete</button>
+  </td>
+</tr>
