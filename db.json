@@ -1,19 +1,38 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "id": 3,
+      "firstName": "wgvwgv",
+      "lastName": "wgwrgvbw",
+      "email": "wgwg",
+      "mobile": 65454,
+      "salary": 654
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 7,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john@test.com",
+      "mobile": 1234567890,
+      "salary": 5000
     }
   ],
+  "comments": [],
   "profile": {
     "name": "typicode"
-  }
+  },
+  "users": [
+    {
+      "id": 1,
+      "name": "Vivek",
+      "email": "vivek@gmail.com",
+      "age": 24
+    },
+    {
+      "id": 2,
+      "name": "Alex",
+      "email": "alex@gmail.com",
+      "age": 28
+    }
+  ]
 }
