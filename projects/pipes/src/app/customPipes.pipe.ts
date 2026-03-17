@@ -1,55 +1,60 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { pipe } from 'rxjs';
 
 @Pipe({
-  name: 'greet'
+  name: 'greet',
 })
 export class GreetPipe implements PipeTransform {
-
   transform(value: unknown, ...args: unknown[]): unknown {
-    return "Hello " + value + " 🔔";
+    return 'Hello ' + value + ' 🔔';
   }
-
 }
 
 @Pipe({
-  name: 'multiply'
+  name: 'multiply',
 })
 export class MultiplyPipe implements PipeTransform {
-
-  transform(value: number, factor: number):number{
+  transform(value: number, factor: number): number {
     return value * factor;
   }
 }
 
 @Pipe({
   name: 'filter',
-  pure: false
+  pure: false,
 })
 export class FilterPipe implements PipeTransform {
   transform(items: string[], searchText: string): string[] {
-    console.log("Filter pipe running...");
-    return items.filter(item => 
-      item.toLowerCase().includes(searchText.toLowerCase())
+    console.log('Filter pipe running...');
+    return items.filter((item) =>
+      item.toLowerCase().includes(searchText.toLowerCase()),
     );
   }
 }
 
 @Pipe({
-  name: 'minInvestment'
+  name: 'minInvestment',
 })
-export class MinInvestment implements PipeTransform{
+export class MinInvestment implements PipeTransform {
   transform(value: number): string {
-    if(!value){
+    if (!value) {
       return '';
     }
-    if(value >= 10000000){
-      return '₹' + (value / 10000000) + 'Cr';
+    if (value >= 10000000) {
+      return '₹' + value / 10000000 + 'Cr';
     }
-    if(value >= 100000){
-      return '₹' + (value / 100000) + 'L';
+    if (value >= 100000) {
+      return '₹' + value / 100000 + 'L';
     }
 
+    return '₹' + value.toLocaleString('en-IN');
+  }
+}
+
+@Pipe({
+  name: 'formateToRS',
+})
+export class FormateToRs implements PipeTransform {
+  transform(value: number) {
     return '₹' + value.toLocaleString('en-IN');
   }
 }

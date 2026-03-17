@@ -1,9 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
-import { GreetPipe, MultiplyPipe, FilterPipe, MinInvestment } from './customPipes.pipe';
 import { FormsModule } from '@angular/forms';
+import { AppComponent } from './app.component';
+import {
+  FilterPipe,
+  FormateToRs,
+  GreetPipe,
+  MinInvestment,
+  MultiplyPipe,
+} from './customPipes.pipe';
+import { CurrencyFormaterPipe } from './currency-formater.pipe';
 
 @NgModule({
   declarations: [
@@ -11,13 +18,12 @@ import { FormsModule } from '@angular/forms';
     GreetPipe,
     MultiplyPipe,
     FilterPipe,
-    MinInvestment
+    MinInvestment,
+    FormateToRs,
+    CurrencyFormaterPipe,
   ],
-  imports: [
-    BrowserModule,
-    FormsModule
-  ],
+  imports: [BrowserModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

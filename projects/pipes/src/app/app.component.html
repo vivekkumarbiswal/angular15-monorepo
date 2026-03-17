@@ -1,26 +1,31 @@
 <h2>Build-in Pipes</h2>
-<p>Uppercase: {{name | uppercase}}</p>
-<p>Uppercase: {{name | lowercase}}</p>
-<p>Date: {{today | date:'fullDate'}}</p>
-<p>Currency: {{price | currency: 'INR'}}</p>
-<p>Percent: {{percentage | percent}}</p>
-<hr>
+<p>Uppercase: {{ name | uppercase }}</p>
+<p>Uppercase: {{ name | lowercase }}</p>
+<p>Date: {{ today | date: "fullDate" }}</p>
+<p>Currency: {{ price | currency: "INR" }}</p>
+<p>Percent: {{ percentage | percent }}</p>
+<hr />
 
 <h2>Custom Pipe</h2>
-<p>{{ name | greet}}</p>
-<p>Multiply: {{ 10 | multiply:5}}</p>
+<p>{{ name | greet }}</p>
+<p>Multiply: {{ 10 | multiply: 5 }}</p>
 
-<hr>
+<hr />
 
-<input [(ngModel)]="searchText" placeholder="Search...">
+<input [(ngModel)]="searchText" placeholder="Search..." />
 <ul>
-  <li *ngFor="let item of items | filter:searchText">{{ item }}</li>
+  <li *ngFor="let item of items | filter: searchText">{{ item }}</li>
 </ul>
 
-<hr>
+<hr />
 
 <h2>Investment Plans</h2>
 
 <ul>
-  <li *ngFor="let plan of investments">{{ plan.name }} - Minimum: {{ plan.minInvestment | minInvestment }}</li>
+  <li *ngFor="let plan of investments">
+    {{ plan.name }} - Minimum: {{ plan.minInvestment | minInvestment }}
+  </li>
 </ul>
+
+<p>{{ price | formateToRS }}</p>
+<p>{{ amount | currencyFormater }}</p>
