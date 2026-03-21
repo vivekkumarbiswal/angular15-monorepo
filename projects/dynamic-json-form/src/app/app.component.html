@@ -1,0 +1,19 @@
+<form
+  *ngIf="formConfig.length"
+  [formGroup]="dynamicForm"
+  (ngSubmit)="onSubmit()"
+>
+  <div *ngFor="let field of formConfig">
+    <label>{{ field.label }}</label>
+    <input [type]="field.type" [formControlName]="field.name" />
+    <small
+      *ngIf="
+        dynamicForm.get(field.name)?.invalid &&
+        dynamicForm.get(field.name)?.touched
+      "
+      >Invalid {{ field.label }}</small
+    >
+  </div>
+
+  <button type="submit">Submit</button>
+</form>

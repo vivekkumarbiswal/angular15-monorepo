@@ -1,0 +1,23 @@
+[
+  {
+    "type": "text",
+    "label": "Name",
+    "name": "name",
+    "value": "",
+    "validators": ["required"]
+  },
+  {
+    "type": "email",
+    "label": "Email",
+    "name": "email",
+    "value": "",
+    "validators": ["required", "email"]
+  },
+  {
+    "type": "password",
+    "label": "Password",
+    "name": "password",
+    "value": "",
+    "validators": ["required"]
+  }
+]
