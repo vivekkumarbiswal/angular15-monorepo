@@ -3020,6 +3020,97 @@
           }
         }
       }
+    },
+    "role-based-auth": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/role-based-auth",
+      "sourceRoot": "projects/role-based-auth/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/role-based-auth",
+            "index": "projects/role-based-auth/src/index.html",
+            "main": "projects/role-based-auth/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/role-based-auth/tsconfig.app.json",
+            "assets": [
+              "projects/role-based-auth/src/favicon.ico",
+              "projects/role-based-auth/src/assets"
+            ],
+            "styles": [
+              "projects/role-based-auth/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "role-based-auth:build:production"
+            },
+            "development": {
+              "browserTarget": "role-based-auth:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "role-based-auth:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/role-based-auth/tsconfig.spec.json",
+            "assets": [
+              "projects/role-based-auth/src/favicon.ico",
+              "projects/role-based-auth/src/assets"
+            ],
+            "styles": [
+              "projects/role-based-auth/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
     }
   }
 }
