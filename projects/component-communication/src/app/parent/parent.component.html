@@ -1,10 +1,13 @@
 <h2>Parent Component</h2>
-<app-child 
-    [name]="parentName"
-    [age]="parentAge"
-    [job]="parentJob"
-    (sendMessage)="receiveMessage($event)"
-    ></app-child>
+<app-child
+  [name]="parentName"
+  [age]="parentAge"
+  [job]="parentJob"
+  [jobStatus]="parentJobStatus"
+  (sendMessage)="receiveMessage($event)"
+  (sendJobStatus)="receiveJobStatus($event)"
+></app-child>
 <button type="button" (click)="changeValue()">Change Parent Value</button>
 
-<p><strong>Message Received:</strong>{{messageFromChild}}</p>
+<p><strong>Message Received:</strong>{{ messageFromChild }}</p>
+<p><strong>Updated Job Status:</strong>{{ receiveJobStatusMsg }}</p>

@@ -4,12 +4,12 @@ import { SharedService } from '../shared.service';
 @Component({
   selector: 'app-sender',
   templateUrl: './sender.component.html',
-  styleUrls: ['./sender.component.scss']
+  styleUrls: ['./sender.component.scss'],
 })
 export class SenderComponent {
-constructor(private sharedService: SharedService){}
+  constructor(private _sharedService: SharedService) {}
 
-sendData(){
-  this.sharedService.sendMessage("Hello Form Sender Component");
-}
+  sendData() {
+    this._sharedService.sendMessage('Hellow this is sender');
+  }
 }

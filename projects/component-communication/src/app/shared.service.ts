@@ -1,15 +1,14 @@
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class SharedService {
-
-  private messageSource = new Subject<string>();
+  private messageSource = new BehaviorSubject<string>('');
   message$ = this.messageSource.asObservable();
 
-  sendMessage(message: string) {
-    this.messageSource.next(message);
+  sendMessage(msg: string) {
+    this.messageSource.next(msg);
   }
 }
