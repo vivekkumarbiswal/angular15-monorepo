@@ -1,11 +1,11 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-child',
   templateUrl: './child.component.html',
   styleUrls: ['./child.component.scss'],
 })
-export class ChildComponent {
+export class ChildComponent implements OnInit {
   // Data received from Parent
   @Input() name: string = '';
   @Input() age!: number;
@@ -16,10 +16,14 @@ export class ChildComponent {
   @Output() sendMessage = new EventEmitter<string>();
   @Output() sendJobStatus = new EventEmitter<string>();
 
-  sendJobStatusFun() {
-    const message = 'Going to get One Job Soon';
-    this.sendJobStatus.emit(message);
+  ngOnInit(): void {
+    this.sendJobStatus.emit('Going to get one Job today');
   }
+
+  // sendJobStatusFun() {
+  //   const message = 'Going to get One Job Soon';
+  //   this.sendJobStatus.emit(message);
+  // }
 
   sendData() {
     const message = 'Hello Parent - message form child';

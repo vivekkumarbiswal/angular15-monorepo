@@ -3111,6 +3111,97 @@
           }
         }
       }
+    },
+    "email-masker": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/email-masker",
+      "sourceRoot": "projects/email-masker/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/email-masker",
+            "index": "projects/email-masker/src/index.html",
+            "main": "projects/email-masker/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/email-masker/tsconfig.app.json",
+            "assets": [
+              "projects/email-masker/src/favicon.ico",
+              "projects/email-masker/src/assets"
+            ],
+            "styles": [
+              "projects/email-masker/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "email-masker:build:production"
+            },
+            "development": {
+              "browserTarget": "email-masker:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "email-masker:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/email-masker/tsconfig.spec.json",
+            "assets": [
+              "projects/email-masker/src/favicon.ico",
+              "projects/email-masker/src/assets"
+            ],
+            "styles": [
+              "projects/email-masker/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
     }
   }
 }
