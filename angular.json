@@ -1692,18 +1692,14 @@
             "outputPath": "dist/guards",
             "index": "projects/guards/src/index.html",
             "main": "projects/guards/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/guards/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/guards/src/favicon.ico",
               "projects/guards/src/assets"
             ],
-            "styles": [
-              "projects/guards/src/styles.scss"
-            ],
+            "styles": ["projects/guards/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -1754,19 +1750,14 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/guards/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/guards/src/favicon.ico",
               "projects/guards/src/assets"
             ],
-            "styles": [
-              "projects/guards/src/styles.scss"
-            ],
+            "styles": ["projects/guards/src/styles.scss"],
             "scripts": []
           }
         }
@@ -1789,18 +1780,14 @@
             "outputPath": "dist/virtual-scroll",
             "index": "projects/virtual-scroll/src/index.html",
             "main": "projects/virtual-scroll/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/virtual-scroll/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/virtual-scroll/src/favicon.ico",
               "projects/virtual-scroll/src/assets"
             ],
-            "styles": [
-              "projects/virtual-scroll/src/styles.scss"
-            ],
+            "styles": ["projects/virtual-scroll/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -1851,19 +1838,14 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/virtual-scroll/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/virtual-scroll/src/favicon.ico",
               "projects/virtual-scroll/src/assets"
             ],
-            "styles": [
-              "projects/virtual-scroll/src/styles.scss"
-            ],
+            "styles": ["projects/virtual-scroll/src/styles.scss"],
             "scripts": []
           }
         }
@@ -1886,18 +1868,14 @@
             "outputPath": "dist/virtual-scroll-pagination",
             "index": "projects/virtual-scroll-pagination/src/index.html",
             "main": "projects/virtual-scroll-pagination/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/virtual-scroll-pagination/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/virtual-scroll-pagination/src/favicon.ico",
               "projects/virtual-scroll-pagination/src/assets"
             ],
-            "styles": [
-              "projects/virtual-scroll-pagination/src/styles.scss"
-            ],
+            "styles": ["projects/virtual-scroll-pagination/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -1948,19 +1926,14 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/virtual-scroll-pagination/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/virtual-scroll-pagination/src/favicon.ico",
               "projects/virtual-scroll-pagination/src/assets"
             ],
-            "styles": [
-              "projects/virtual-scroll-pagination/src/styles.scss"
-            ],
+            "styles": ["projects/virtual-scroll-pagination/src/styles.scss"],
             "scripts": []
           }
         }
@@ -1983,18 +1956,14 @@
             "outputPath": "dist/pagination",
             "index": "projects/pagination/src/index.html",
             "main": "projects/pagination/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/pagination/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/pagination/src/favicon.ico",
               "projects/pagination/src/assets"
             ],
-            "styles": [
-              "projects/pagination/src/styles.scss"
-            ],
+            "styles": ["projects/pagination/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -2045,19 +2014,14 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/pagination/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/pagination/src/favicon.ico",
               "projects/pagination/src/assets"
             ],
-            "styles": [
-              "projects/pagination/src/styles.scss"
-            ],
+            "styles": ["projects/pagination/src/styles.scss"],
             "scripts": []
           }
         }
@@ -2080,18 +2044,14 @@
             "outputPath": "dist/rxjs-subject",
             "index": "projects/rxjs-subject/src/index.html",
             "main": "projects/rxjs-subject/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/rxjs-subject/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/rxjs-subject/src/favicon.ico",
               "projects/rxjs-subject/src/assets"
             ],
-            "styles": [
-              "projects/rxjs-subject/src/styles.scss"
-            ],
+            "styles": ["projects/rxjs-subject/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -2142,19 +2102,14 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/rxjs-subject/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/rxjs-subject/src/favicon.ico",
               "projects/rxjs-subject/src/assets"
             ],
-            "styles": [
-              "projects/rxjs-subject/src/styles.scss"
-            ],
+            "styles": ["projects/rxjs-subject/src/styles.scss"],
             "scripts": []
           }
         }
@@ -2177,18 +2132,14 @@
             "outputPath": "dist/login-authentication",
             "index": "projects/login-authentication/src/index.html",
             "main": "projects/login-authentication/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/login-authentication/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/login-authentication/src/favicon.ico",
               "projects/login-authentication/src/assets"
             ],
-            "styles": [
-              "projects/login-authentication/src/styles.scss"
-            ],
+            "styles": ["projects/login-authentication/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -2239,19 +2190,14 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/login-authentication/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/login-authentication/src/favicon.ico",
               "projects/login-authentication/src/assets"
             ],
-            "styles": [
-              "projects/login-authentication/src/styles.scss"
-            ],
+            "styles": ["projects/login-authentication/src/styles.scss"],
             "scripts": []
           }
         }
@@ -2274,18 +2220,14 @@
             "outputPath": "dist/creating-using-observable",
             "index": "projects/creating-using-observable/src/index.html",
             "main": "projects/creating-using-observable/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/creating-using-observable/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/creating-using-observable/src/favicon.ico",
               "projects/creating-using-observable/src/assets"
             ],
-            "styles": [
-              "projects/creating-using-observable/src/styles.scss"
-            ],
+            "styles": ["projects/creating-using-observable/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -2336,19 +2278,14 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/creating-using-observable/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/creating-using-observable/src/favicon.ico",
               "projects/creating-using-observable/src/assets"
             ],
-            "styles": [
-              "projects/creating-using-observable/src/styles.scss"
-            ],
+            "styles": ["projects/creating-using-observable/src/styles.scss"],
             "scripts": []
           }
         }
@@ -2367,17 +2304,13 @@
             "outputPath": "dist/http",
             "index": "projects/http/src/index.html",
             "main": "projects/http/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/http/tsconfig.app.json",
             "assets": [
               "projects/http/src/favicon.ico",
               "projects/http/src/assets"
             ],
-            "styles": [
-              "projects/http/src/styles.css"
-            ],
+            "styles": ["projects/http/src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -2428,18 +2361,13 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/http/tsconfig.spec.json",
             "assets": [
               "projects/http/src/favicon.ico",
               "projects/http/src/assets"
             ],
-            "styles": [
-              "projects/http/src/styles.css"
-            ],
+            "styles": ["projects/http/src/styles.css"],
             "scripts": []
           }
         }
@@ -2458,17 +2386,13 @@
             "outputPath": "dist/http-crud",
             "index": "projects/http-crud/src/index.html",
             "main": "projects/http-crud/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/http-crud/tsconfig.app.json",
             "assets": [
               "projects/http-crud/src/favicon.ico",
               "projects/http-crud/src/assets"
             ],
-            "styles": [
-              "projects/http-crud/src/styles.css"
-            ],
+            "styles": ["projects/http-crud/src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -2519,18 +2443,13 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/http-crud/tsconfig.spec.json",
             "assets": [
               "projects/http-crud/src/favicon.ico",
               "projects/http-crud/src/assets"
             ],
-            "styles": [
-              "projects/http-crud/src/styles.css"
-            ],
+            "styles": ["projects/http-crud/src/styles.css"],
             "scripts": []
           }
         }
@@ -2553,18 +2472,14 @@
             "outputPath": "dist/simple-crud",
             "index": "projects/simple-crud/src/index.html",
             "main": "projects/simple-crud/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/simple-crud/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/simple-crud/src/favicon.ico",
               "projects/simple-crud/src/assets"
             ],
-            "styles": [
-              "projects/simple-crud/src/styles.scss"
-            ],
+            "styles": ["projects/simple-crud/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -2615,19 +2530,14 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/simple-crud/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/simple-crud/src/favicon.ico",
               "projects/simple-crud/src/assets"
             ],
-            "styles": [
-              "projects/simple-crud/src/styles.scss"
-            ],
+            "styles": ["projects/simple-crud/src/styles.scss"],
             "scripts": []
           }
         }
@@ -2650,18 +2560,14 @@
             "outputPath": "dist/dynamic-form",
             "index": "projects/dynamic-form/src/index.html",
             "main": "projects/dynamic-form/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/dynamic-form/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/dynamic-form/src/favicon.ico",
               "projects/dynamic-form/src/assets"
             ],
-            "styles": [
-              "projects/dynamic-form/src/styles.scss"
-            ],
+            "styles": ["projects/dynamic-form/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -2712,19 +2618,14 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/dynamic-form/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/dynamic-form/src/favicon.ico",
               "projects/dynamic-form/src/assets"
             ],
-            "styles": [
-              "projects/dynamic-form/src/styles.scss"
-            ],
+            "styles": ["projects/dynamic-form/src/styles.scss"],
             "scripts": []
           }
         }
@@ -2747,18 +2648,14 @@
             "outputPath": "dist/interceptor",
             "index": "projects/interceptor/src/index.html",
             "main": "projects/interceptor/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/interceptor/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/interceptor/src/favicon.ico",
               "projects/interceptor/src/assets"
             ],
-            "styles": [
-              "projects/interceptor/src/styles.scss"
-            ],
+            "styles": ["projects/interceptor/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -2809,19 +2706,14 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/interceptor/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/interceptor/src/favicon.ico",
               "projects/interceptor/src/assets"
             ],
-            "styles": [
-              "projects/interceptor/src/styles.scss"
-            ],
+            "styles": ["projects/interceptor/src/styles.scss"],
             "scripts": []
           }
         }
@@ -2844,18 +2736,14 @@
             "outputPath": "dist/dynamic-json-form",
             "index": "projects/dynamic-json-form/src/index.html",
             "main": "projects/dynamic-json-form/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/dynamic-json-form/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/dynamic-json-form/src/favicon.ico",
               "projects/dynamic-json-form/src/assets"
             ],
-            "styles": [
-              "projects/dynamic-json-form/src/styles.scss"
-            ],
+            "styles": ["projects/dynamic-json-form/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -2906,19 +2794,14 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/dynamic-json-form/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/dynamic-json-form/src/favicon.ico",
               "projects/dynamic-json-form/src/assets"
             ],
-            "styles": [
-              "projects/dynamic-json-form/src/styles.scss"
-            ],
+            "styles": ["projects/dynamic-json-form/src/styles.scss"],
             "scripts": []
           }
         }
@@ -2941,18 +2824,14 @@
             "outputPath": "dist/routing-guards",
             "index": "projects/routing-guards/src/index.html",
             "main": "projects/routing-guards/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/routing-guards/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/routing-guards/src/favicon.ico",
               "projects/routing-guards/src/assets"
             ],
-            "styles": [
-              "projects/routing-guards/src/styles.scss"
-            ],
+            "styles": ["projects/routing-guards/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -3003,19 +2882,14 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/routing-guards/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/routing-guards/src/favicon.ico",
               "projects/routing-guards/src/assets"
             ],
-            "styles": [
-              "projects/routing-guards/src/styles.scss"
-            ],
+            "styles": ["projects/routing-guards/src/styles.scss"],
             "scripts": []
           }
         }
@@ -3034,17 +2908,13 @@
             "outputPath": "dist/role-based-auth",
             "index": "projects/role-based-auth/src/index.html",
             "main": "projects/role-based-auth/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/role-based-auth/tsconfig.app.json",
             "assets": [
               "projects/role-based-auth/src/favicon.ico",
               "projects/role-based-auth/src/assets"
             ],
-            "styles": [
-              "projects/role-based-auth/src/styles.css"
-            ],
+            "styles": ["projects/role-based-auth/src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -3095,18 +2965,13 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/role-based-auth/tsconfig.spec.json",
             "assets": [
               "projects/role-based-auth/src/favicon.ico",
               "projects/role-based-auth/src/assets"
             ],
-            "styles": [
-              "projects/role-based-auth/src/styles.css"
-            ],
+            "styles": ["projects/role-based-auth/src/styles.css"],
             "scripts": []
           }
         }
@@ -3125,17 +2990,13 @@
             "outputPath": "dist/email-masker",
             "index": "projects/email-masker/src/index.html",
             "main": "projects/email-masker/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/email-masker/tsconfig.app.json",
             "assets": [
               "projects/email-masker/src/favicon.ico",
               "projects/email-masker/src/assets"
             ],
-            "styles": [
-              "projects/email-masker/src/styles.css"
-            ],
+            "styles": ["projects/email-masker/src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -3186,17 +3047,103 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/email-masker/tsconfig.spec.json",
             "assets": [
               "projects/email-masker/src/favicon.ico",
               "projects/email-masker/src/assets"
             ],
+            "styles": ["projects/email-masker/src/styles.css"],
+            "scripts": []
+          }
+        }
+      }
+    },
+    "resolver": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/resolver",
+      "sourceRoot": "projects/resolver/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/resolver",
+            "index": "projects/resolver/src/index.html",
+            "main": "projects/resolver/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/resolver/tsconfig.app.json",
+            "assets": [
+              "projects/resolver/src/favicon.ico",
+              "projects/resolver/src/assets"
+            ],
             "styles": [
-              "projects/email-masker/src/styles.css"
+              "projects/resolver/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "resolver:build:production"
+            },
+            "development": {
+              "browserTarget": "resolver:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "resolver:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/resolver/tsconfig.spec.json",
+            "assets": [
+              "projects/resolver/src/favicon.ico",
+              "projects/resolver/src/assets"
+            ],
+            "styles": [
+              "projects/resolver/src/styles.css"
             ],
             "scripts": []
           }
